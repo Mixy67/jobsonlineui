@@ -17,7 +17,7 @@ namespace JobsOnlineUI
         }
         protected override void Unload()
         {
-            StartCoroutine((IEnumerator)Count());
+            StopCoroutine((IEnumerator)Count());
         }
         private IEnumerator<WaitForSeconds> Count()
         {
